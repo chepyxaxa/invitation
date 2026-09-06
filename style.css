@@ -279,7 +279,7 @@ html {
     display: block;
     width: 100%;
     padding: 10px;
-    border: none;
+    border: 1px solid #FFB5DA;
     border-radius: 8px;
     background-color: #FFFFFF;
     font-family: 'TextFont';
