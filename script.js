@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const formData = new FormData(form);
 
-        // ЗАМЕНИТЕ 'ваша-почта@mail.ru' на ваш реальный email
-        fetch('https://formsubmit.co/ajax/ваша-почта@mail.ru', {
+        // ЗАМЕНИТЕ '@mail.ru' на ваш реальный email
+        fetch('https://formsubmit.co/ajax/kozsofa856@gmail.com', {
                 method: 'POST',
                 body: formData,
                 headers: {

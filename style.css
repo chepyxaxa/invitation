@@ -326,3 +326,68 @@ html {
 .send-btn:hover {
     opacity: 0.8;
 }
+
+
+/* --- АДАПТАЦИЯ ДЛЯ МАЛЕНЬКИХ ТЕЛЕФОНОВ (< 380px) --- */
+
+@media (max-width: 380px) {
+    /* Блок с заголовком */
+    .relative-box {
+        height: 180px;
+    }
+    /* Уменьшаем сам шрифт, чтобы слова влезали */
+    .word-na,
+    .word-nashu,
+    .word-rospis {
+        font-size: 54px;
+    }
+    /* Немного сдвигаем слова влево, чтобы они оставались по центру */
+    .word-na {
+        left: 130px;
+        top: 15px;
+    }
+    .word-nashu {
+        left: 50px;
+        top: 60px;
+    }
+    .word-rospis {
+        left: 100px;
+        top: 110px;
+    }
+    /* Уменьшаем звёзды */
+    .star-1 {
+        width: 50px;
+        height: 60px;
+        left: 210px;
+        top: 40px;
+    }
+    .star-2 {
+        width: 40px;
+        height: 55px;
+        left: 30px;
+        top: 110px;
+    }
+    /* Дата: уменьшаем отступы внутри рамки */
+    .date-frame {
+        padding: 6px 20px;
+    }
+    /* Адрес: растягиваем на 92% ширины, чтобы не прилипал к краям */
+    .location-text {
+        width: 92%;
+        font-size: 24px;
+        margin-top: 60px;
+    }
+    /* Форма: растягиваем на 92% (чтобы было ровно по 4% с каждого края) */
+    .form-block {
+        width: 92%;
+        padding: 15px 10px;
+    }
+    /* Внутренний блок формы: теперь он занимает всю ширину родителя */
+    .form-inner-block {
+        width: 100%;
+    }
+    /* Кнопка: растягивается на всю ширину */
+    .send-btn {
+        width: 100%;
+    }
+}
