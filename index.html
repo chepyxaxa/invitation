@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Приглашение на роспись</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="site-wrapper" id="appContainer">
+
+        <div class="arch-background"></div>
+
+        <div class="door-wrapper">
+            <div class="door-half door-left"></div>
+            <div class="door-half door-right"></div>
+        </div>
+
+        <div class="scroll-container">
+            <div class="hidden-content">
+
+                <div class="relative-box">
+                    <h1 class="word-na">на</h1>
+                    <h1 class="word-nashu">нашу</h1>
+                    <h1 class="word-rospis">роспись</h1>
+
+                    <img src="images/звёзды1.png" class="star star-1" alt="*">
+                    <img src="images/звёзды2.png" class="star star-2" alt="*">
+                </div>
+
+                <div class="couple-container">
+                    <img src="images/лика и влад.png" class="hero-image" alt="Мы">
+                    <img src="images/сердечко.png" class="heart-middle" alt="сердечко">
+                </div>
+
+                <div class="date-frame">
+                    <img src="images/подсолнух.png" class="sunflower" alt="цветок">
+                    <span class="date-text">03.07.2027</span>
+                </div>
+
+                <div class="heart-bottom-container">
+                    <img src="images/сердце.png" class="heart-bottom" alt="сердце">
+                </div>
+
+                <div class="location-text">
+                    Роспись будет проходить в<br> г.Новосибирск,
+                    <br> ул.Красный проспект, 66.
+                </div>
+
+                <!-- ОБНОВЛЕННАЯ ФОРМА (тег form вместо div) -->
+                <form class="form-block" id="rsvpForm">
+                    <h3>А вы приёте?</h3>
+
+                    <div class="form-inner-block">
+                        <!-- Поле имени с атрибутом name -->
+                        <input type="text" class="input-field" placeholder="Ваше имя" name="Имя" required>
+
+                        <!-- Варианты ответа -->
+                        <label class="radio-label">
+                            <input type="radio" name="Ответ" value="Да" required> Да
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="Ответ" value="Нет"> Нет
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="Ответ" value="Обязательно"> Обязательно
+                        </label>
+
+                        <!-- Скрытые настройки для FormSubmit -->
+                        <input type="hidden" name="_subject" value="Новый ответ с сайта приглашения!">
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <button type="submit" class="send-btn">Отправить</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
